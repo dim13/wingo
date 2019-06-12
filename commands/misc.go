@@ -12,8 +12,8 @@ import (
 
 	"github.com/BurntSushi/wingo/logger"
 	"github.com/BurntSushi/wingo/prompt"
-	"github.com/BurntSushi/wingo/workspace"
 	"github.com/BurntSushi/wingo/wm"
+	"github.com/BurntSushi/wingo/workspace"
 	"github.com/BurntSushi/wingo/xclient"
 )
 

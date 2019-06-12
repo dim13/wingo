@@ -413,9 +413,9 @@ func loadPromptOption(theme *ThemeConfig, k wini.Key) {
 		// naughty!
 		if theme.Prompt.cycleIconTransparency < 0 ||
 			theme.Prompt.cycleIconTransparency > 100 {
-			logger.Warning.Printf("Illegal value '%d' provided for " +
-				"'cycle_icon_transparency'. Transparency " +
-				"values must be in the range [0, 100], " +
+			logger.Warning.Printf("Illegal value '%d' provided for "+
+				"'cycle_icon_transparency'. Transparency "+
+				"values must be in the range [0, 100], "+
 				"inclusive. Using 100 by default.",
 				theme.Prompt.cycleIconTransparency)
 			theme.Prompt.cycleIconTransparency = 100
