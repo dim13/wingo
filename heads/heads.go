@@ -138,7 +138,7 @@ func (hds *Heads) Reload(clients Clients) {
 
 		if oldActive != hds.visibles[hds.active] {
 			panic(fmt.Sprintf("BUG: Old active workspace %s is not the same "+
-				"as the new active workspace.",
+				"as the new active workspace %s.",
 				oldActive, hds.visibles[hds.active]))
 		}
 	}

@@ -50,7 +50,7 @@ func (mcmd mouseCommand) setup(c Client, wid xproto.Window) {
 	if mcmd.cmdName == "MouseResize" {
 		direction, err := cmdHacks.MouseResizeDirection(mcmd.cmdStr)
 		if err != nil {
-			logger.Warning.Println("Could not setup MouseResize: %s", err)
+			logger.Warning.Printf("Could not setup MouseResize: %s", err)
 			return
 		}
 		setupResizeDrag(c, wid, mcmd.buttonStr, true, strToDirection(direction))

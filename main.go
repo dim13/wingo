@@ -226,7 +226,7 @@ EVENTLOOP:
 		if !found {
 			os.Args = append(os.Args, "--wingo-restarted")
 		}
-		logger.Message.Println("The user has told us to restart...\n\n\n")
+		logger.Message.Printf("The user has told us to restart...\n\n\n")
 		execPath, err := os.Executable()
 		if err != nil {
 			logger.Warning.Printf("could not find executable: %s\n", err)

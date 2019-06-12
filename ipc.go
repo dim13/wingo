@@ -29,7 +29,7 @@ func ipc(X *xgbutil.XUtil) {
 
 	listener, err := net.Listen("unix", fpath)
 	if err != nil {
-		logger.Error.Fatalln("Could not start IPC listener: %s", err)
+		logger.Error.Fatalf("Could not start IPC listener: %s", err)
 	}
 	defer listener.Close()
 

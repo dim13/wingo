@@ -21,7 +21,7 @@ func Notifier(X *xgbutil.XUtil, fp string) {
 
 	listener, err := net.Listen("unix", fp)
 	if err != nil {
-		logger.Error.Fatalln("Could not start IPC event listener: %s", err)
+		logger.Error.Fatalf("Could not start IPC event listener: %s", err)
 	}
 	defer listener.Close()
 
